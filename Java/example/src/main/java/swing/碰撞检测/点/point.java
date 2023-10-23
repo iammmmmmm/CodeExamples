@@ -7,6 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.geom.Ellipse2D;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -50,8 +51,8 @@ public class point {
 
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
-            LOGGER.debug("g size:{}",g.getClipBounds());
             Graphics2D g2d = (Graphics2D) g;
+            g2d.setStroke(new BasicStroke(radius));
             //no point so ⬇️🤪
                 g2d.drawLine(x,y,x,y);
         }
@@ -80,7 +81,12 @@ public class point {
                     case KeyEvent.VK_S -> y++;
                     case KeyEvent.VK_A -> x--;
                     case KeyEvent.VK_D -> x++;
+                    case KeyEvent.VK_ADD -> radius++;
+                    case KeyEvent.VK_SUBTRACT -> radius--;
                     default -> LOGGER.debug("ex key {}",i);
+                }
+                if (radius<=0){
+                    radius=1;
                 }
                 repaint();
             }
