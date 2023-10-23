@@ -21,7 +21,7 @@ public class HelloWorld {
         logger.error("error");
         logger.warn("warn");
         logger.trace("trace");
-        //通配符{}(？应改叫这个🤔)
+        //通配符{}(？应该叫这个🤔)
         logger.info("{}", "info");
     }
 }
