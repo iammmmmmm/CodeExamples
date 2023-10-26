@@ -7,7 +7,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.geom.Ellipse2D;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -43,6 +42,9 @@ public class point {
         private int y = 10;
         private int radius = 10;
 
+
+        double threshold = 0;
+
         public pointPanel(int x, int y, int radius) {
             this.x = x;
             this.y = y;
@@ -54,8 +56,9 @@ public class point {
             Graphics2D g2d = (Graphics2D) g;
             g2d.setStroke(new BasicStroke(radius));
             //no point so ⬇️🤪
-                g2d.drawLine(x,y,x,y);
+            g2d.drawLine(x,y,x,y);
         }
+
 
         /**
          * @param e the event to be processed
@@ -98,6 +101,16 @@ public class point {
         @Override
         public void keyReleased(KeyEvent e) {
             pressed.remove(e.getKeyCode());
+        }
+    }
+
+    private class ImpactChecking{
+        boolean isImpact(point a,point b){
+            boolean isImpact =false;
+
+
+
+            return isImpact;
         }
     }
 }
