@@ -2,7 +2,9 @@ package qt;
 
 import io.qt.core.QSize;
 import io.qt.gui.QWindow;
-import io.qt.widgets.*;
+import io.qt.widgets.QApplication;
+import io.qt.widgets.QPushButton;
+import io.qt.widgets.QWidget;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,7 +19,7 @@ public class dem02 {
     /**
      * 任何qt代码都必须在
      * QApplication.initialize(args);
-     * // is here
+     * \r\n// is here
      * QApplication.exec();
      * 这两句代码中间
      */
