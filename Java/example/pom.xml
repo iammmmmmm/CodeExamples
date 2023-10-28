@@ -40,6 +40,13 @@
             <artifactId>jna-platform</artifactId>
             <version>5.13.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.melloware/jintellitype -->
+        <dependency>
+            <groupId>com.melloware</groupId>
+            <artifactId>jintellitype</artifactId>
+            <version>1.4.1</version>
+        </dependency>
+
         <dependency>
             <groupId>io.qtjambi</groupId>
             <artifactId>qtjambi</artifactId>
