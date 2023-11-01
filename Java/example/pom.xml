@@ -57,6 +57,30 @@
             <artifactId>qtjambi-native-windows-x64</artifactId>
             <version>6.6.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qtjambi/qtjambi-multimedia -->
+        <dependency>
+            <groupId>io.qtjambi</groupId>
+            <artifactId>qtjambi-multimedia</artifactId>
+            <version>6.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qtjambi</groupId>
+            <artifactId>qtjambi-multimedia-native-windows-x64</artifactId>
+            <version>6.6.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qtjambi/qtjambi-multimediawidgets -->
+        <dependency>
+            <groupId>io.qtjambi</groupId>
+            <artifactId>qtjambi-multimediawidgets</artifactId>
+            <version>6.6.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qtjambi/qtjambi-multimediawidgets-native-windows-x64 -->
+        <dependency>
+            <groupId>io.qtjambi</groupId>
+            <artifactId>qtjambi-multimediawidgets-native-windows-x64</artifactId>
+            <version>6.6.0</version>
+        </dependency>
+
 
 
     </dependencies>
