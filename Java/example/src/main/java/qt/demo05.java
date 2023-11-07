@@ -1,12 +1,8 @@
 package qt;
 
-import io.qt.core.QAbstractAnimation;
 import io.qt.core.QUrl;
 import io.qt.core.Qt;
-import io.qt.gui.QPicture;
 import io.qt.gui.QPixmap;
-import io.qt.multimedia.QAudio;
-import io.qt.multimedia.QAudioFormat;
 import io.qt.multimedia.QAudioOutput;
 import io.qt.multimedia.QMediaPlayer;
 import io.qt.multimedia.widgets.QVideoWidget;
@@ -36,7 +32,7 @@ class media extends QWidget {
         //设置窗口标题
         setWindowTitle("媒体");
         //设置窗口大小
-        setFixedSize(1500, 500);
+        setFixedSize(1500, 1000);
         //设置窗口sticky属性，保持窗口始终置顶
         setWindowFlags(Qt.WindowType.WindowStaysOnTopHint);
         //设置窗口背景透明，用于鼠标悬停显示窗口内容
@@ -44,7 +40,7 @@ class media extends QWidget {
         //设置窗口无边框
         setWindowFlag(Qt.WindowType.FramelessWindowHint);
         //设置窗口透明度
-        setWindowOpacity(0.5f);
+        setWindowOpacity(1f);
 //        //设置窗口全屏显示
 //        setWindowState(Qt.WindowState.WindowFullScreen);
     }
@@ -69,6 +65,8 @@ class media extends QWidget {
         // 创建一个QLabel对象，用于显示图片
         QLabel qLabel1 = new QLabel(parent);
 
+        qLabel1.setPixmap(qPixmap);
+
         // 设置图片位置和大小
         qLabel1.setGeometry(500, 0, 500, 500);
 
@@ -88,21 +86,26 @@ class media extends QWidget {
         qm.setSource(new QUrl("src/main/resources/飘向北方-那吾克热-NW&尤长靖-.mp3"));
 
         // 播放音频文件
-        qm.play();
+//        qm.play();
 
+        QSplitter musicsp=new QSplitter(parent);
+        QLabel musicLabel=new QLabel(parent);
+        musicLabel.setText(qm.duration()+"ms");
+        musicLabel.setGeometry(1000,50,500,50);
 
-
-
-
-
-
-
-
-
+        QMediaPlayer qM1=new QMediaPlayer(parent);
+        qM1.setSource(new QUrl("src/main/resources/飘向北方mv.mp4"));
+      QVideoWidget qVideoWidget=new QVideoWidget(parent);
+      qM1.setVideoOutput(qVideoWidget);
+      qM1.setAudioOutput(qAudio);
+      qVideoWidget.setGeometry(0,500,250,250);
+qM1.play();
         // 显示窗口
         show();
 
+    }
 
+    void positionChanged(long position){
 
     }
 
