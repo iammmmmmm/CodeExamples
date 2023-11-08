@@ -165,7 +165,7 @@ class myGUI extends QWidget {
         stickers = new QPixmap(picPathName);
         //Set the pixmap to the preview label
         preview.setPixmap(stickers.scaled(500, 500, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation));
-        //Show the preview label
+        //Show the preview label`
         preview.show();
     }
 
