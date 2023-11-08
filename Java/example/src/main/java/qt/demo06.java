@@ -1,8 +1,6 @@
 package qt;
 
-import io.qt.NonNull;
-import io.qt.core.QFile;
-import io.qt.core.QUrl;
+
 import io.qt.core.Qt;
 import io.qt.gui.QBrush;
 import io.qt.gui.QPalette;
@@ -36,24 +34,24 @@ class myGUI extends QWidget {
     private final QWidget parent = this;
     //File dialog to open images
     private QFileDialog qFileDialog = new QFileDialog(parent, "选择图片", "./");
-   //Label to show the image
-   private QLabel preview=new QLabel(parent);
-   //Label to show the transparency slider
-   private QLabel setTransparency =new QLabel("透明度", parent);
-   //Slider to adjust the transparency
-   private QSlider TransparencySlider = new QSlider(parent);
-   //Variable to store the current transparency
-   private double transparency=100;
-   //Variable to store the path of the image
-   private String picPathName = null;
-   //Variable to store the QPixmap of the image
-   private QPixmap stickers;
-   //Label to show the current transparency
-   private QLabel previewTransparency=new QLabel(parent);
-   //Button to show the image on the screen
-   private QPushButton showPic=new QPushButton("在屏幕上显示贴图", parent);
-   //Widget to contain the image
-   private QWidget picWidget=new QWidget();
+    //Label to show the image
+    private QLabel preview=new QLabel(parent);
+    //Label to show the transparency slider
+    private QLabel setTransparency =new QLabel("透明度", parent);
+    //Slider to adjust the transparency
+    private QSlider TransparencySlider = new QSlider(parent);
+    //Variable to store the current transparency
+    private double transparency=100;
+    //Variable to store the path of the image
+    private String picPathName = null;
+    //Variable to store the QPixmap of the image
+    private QPixmap stickers;
+    //Label to show the current transparency
+    private QLabel previewTransparency=new QLabel(parent);
+    //Button to show the image on the screen
+    private QPushButton showPic=new QPushButton("在屏幕上显示贴图", parent);
+    //Widget to contain the image
+    private QWidget picWidget=new QWidget();
     //Variables to store the width and height of the screen
     private int screenW=1000, screenH=1000;
 
@@ -99,8 +97,8 @@ class myGUI extends QWidget {
         if (picPathName==null){
             return;
         }
-     //Hide the window
-     setVisible(false);
+        //Hide the window
+        setVisible(false);
         //设置窗口标题
         //Set the window title
         picWidget.setWindowTitle("屏幕贴图");
@@ -116,12 +114,12 @@ class myGUI extends QWidget {
         picWidget.setWindowFlag(Qt.WindowType.FramelessWindowHint);
         //设置窗口透明度
         picWidget.setWindowOpacity(transparency);
-       //设置窗口全屏显示
+        //设置窗口全屏显示
 //       picWidget.setWindowState(Qt.WindowState.WindowFullScreen);
-     QPalette palette= picWidget.getPalette();
-     //Set the background of the widget to the image
-     palette.setBrush(QPalette.ColorRole.Window,new QBrush(stickers));
-     picWidget.setPalette(palette);
+        QPalette palette= picWidget.getPalette();
+        //Set the background of the widget to the image
+        palette.setBrush(QPalette.ColorRole.Window,new QBrush(stickers));
+        picWidget.setPalette(palette);
         //Show the widget
         picWidget.show();
     }

@@ -8,13 +8,18 @@ import io.qt.multimedia.QMediaPlayer;
 import io.qt.multimedia.widgets.QVideoWidget;
 import io.qt.widgets.QApplication;
 import io.qt.widgets.QLabel;
-import io.qt.widgets.QSplitter;
 import io.qt.widgets.QWidget;
 
-/**
- * @author Iammm
+/*
+  @author Iammm
  * @date 2023/11/1 16:02
  * @description 媒体相关，显示图片，播放音视频
+ */
+
+/**
+ * 这是一个使用Java语言编写的Qt应用程序，用于显示图片、播放音频和视频。在这个例子中，我们创建了两个QLabel对象，一个用于显示图片
+ * ，一个用于显示音频播放进度。我们还创建了一个QMediaPlayer对象和一个QAudioOutput对象，用于播放音频文件。
+ * 请注意，这个例子中使用了Java的Qt绑定库，因此需要使用Java编译器进行编译。同时，这个例子中使用了Java的类路径，因此需要在运行时指定正确的类路径。
  */
 public class demo05 {
     public static void main(String[] args) {
@@ -87,8 +92,8 @@ class media extends QWidget {
 
         // 播放音频文件
 //        qm.play();
+//TODO 为视频和音频播放添加进度条
 
-        QSplitter musicsp=new QSplitter(parent);
         QLabel musicLabel=new QLabel(parent);
         musicLabel.setText(qm.duration()+"ms");
         musicLabel.setGeometry(1000,50,500,50);
@@ -105,9 +110,7 @@ qM1.play();
 
     }
 
-    void positionChanged(long position){
 
-    }
 
 
 }
