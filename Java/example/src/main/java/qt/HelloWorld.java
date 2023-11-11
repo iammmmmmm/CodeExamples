@@ -1,6 +1,5 @@
 package qt;
 
-import io.qt.widgets.QMessageBox;
 /**
  * @author Iammm
  * @date 2023/10/25 18:39

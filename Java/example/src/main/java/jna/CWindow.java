@@ -21,7 +21,7 @@ new CWindow().test();
     public CWindow() {
     }
 
-    class WindowProc implements Callback {
+    static class WindowProc implements Callback {
         public WinDef.LRESULT callback(WinDef.HWND hwnd, WinDef.UINT uMsg, WinDef.WPARAM wParam, WinDef.LPARAM lParam) {
             switch (uMsg.intValue()) {
                 case WinUser.WM_CLOSE:

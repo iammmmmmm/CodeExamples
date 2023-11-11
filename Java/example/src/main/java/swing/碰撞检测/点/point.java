@@ -104,7 +104,7 @@ public class point {
         }
     }
 
-    private class ImpactChecking{
+    private static class ImpactChecking{
         boolean isImpact(point a,point b){
             boolean isImpact =false;
 

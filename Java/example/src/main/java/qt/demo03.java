@@ -1,8 +1,6 @@
 package qt;
 
-import io.qt.core.QSize;
 import io.qt.core.Qt;
-import io.qt.gui.QWindow;
 import io.qt.widgets.*;
 
 /**
