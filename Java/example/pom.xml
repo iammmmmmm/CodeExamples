@@ -91,6 +91,18 @@
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qtjambi/qtjambi-uic -->
+        <dependency>
+            <groupId>io.qtjambi</groupId>
+            <artifactId>qtjambi-uic</artifactId>
+            <version>6.6.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qtjambi/qtjambi-uic-native-windows-x64 -->
+        <dependency>
+            <groupId>io.qtjambi</groupId>
+            <artifactId>qtjambi-uic-native-windows-x64</artifactId>
+            <version>6.6.0</version>
+        </dependency>
 
 
     </dependencies>
