@@ -6,10 +6,10 @@ import org.slf4j.Logger;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+/** gson first demo
  * @author Iammm
  * @date 2023/11/13 18:10
- * @description gson first demo
+ *
  */
 public class demo01 {
     static Logger logger = org.slf4j.LoggerFactory.getLogger(demo01.class);

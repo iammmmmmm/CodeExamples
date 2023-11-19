@@ -1,9 +1,9 @@
 package swing;
 
-/**
+/**AI写的不规则多边形例子
  * @author AI
  * @date 2023/10/23 13:40
- * @description AI写的不规则多边形例子
+ * @description
  */
 import javax.swing.*;
 import java.awt.*;

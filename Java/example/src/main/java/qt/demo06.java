@@ -11,10 +11,10 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Collections;
 
-/**
+/** 屏幕贴图
  * @author Iammm
  * @date 2023/11/7 17:26
- * @description 屏幕贴图
+ *
  */
 public class demo06 {
 

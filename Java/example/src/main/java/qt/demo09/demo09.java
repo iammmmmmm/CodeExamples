@@ -4,9 +4,10 @@ import io.qt.widgets.QApplication;
 import io.qt.widgets.QWidget;
 
 /**
+ 调用从.ui转到java的界面、
+
  * @author Iammm
  * @date 2023/11/17 17:17
- * @description 调用从.ui转到java的界面、
  */
 public class demo09 {
     public static void main(String[] args) {

@@ -6,10 +6,10 @@ import io.qt.widgets.QApplication;
 import io.qt.widgets.QWidget;
 import io.qt.widgets.tools.QUiLoader;
 
-/**
+/**使用qt自带的可视化ui设计软件设计出的ui界面
  * @author Iammm
  * @date 2023/11/8 11:34
- * @description 使用qt自带的可视化ui设计软件设计ui
+ *
  */
 public class demo07 {
     public static void main(String[] args) {

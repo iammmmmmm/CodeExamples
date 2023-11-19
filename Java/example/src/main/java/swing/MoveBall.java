@@ -9,18 +9,31 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+
 /**
-*@author Iammm
-*@date 2023/10/21 18:55
-*@description 一个可以用wasd移动的球的示例
-*/
+ * 移动球 ，一个可以用wasd移动的球的示例
+ *
+ * @author Iammm
+ * @date 2023/10/21 18:55
+ */
 public class MoveBall {
+    /**
+     * 日志
+     */
     private final Logger LOGGER = LoggerFactory.getLogger(MoveBall.class);
 
+    /**
+     * 主要
+     *
+     * @param args 参数
+     */
     public static void main(String[] args) {
         new MoveBall().run();
     }
 
+    /**
+     * 跑
+     */
     private void run() {
         JFrame frame = new JFrame("Move Ball");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -30,6 +43,11 @@ public class MoveBall {
         frame.setVisible(true);
     }
 
+    /**
+     * 抽球
+     *
+     * @param frame 框架
+     */
     private void drawBall(JFrame frame) {
         ball myball = new ball();
         frame.addKeyListener(myball);

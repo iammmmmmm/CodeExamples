@@ -3,10 +3,10 @@ package qt;
 import io.qt.core.Qt;
 import io.qt.widgets.*;
 
-/**
+/**布局管理器
  * @author Iammm
  * @date 2023/10/27 13:32
- * @description 布局管理器
+ *
  */
 public class demo03 {
     public static void main(String[] args) {

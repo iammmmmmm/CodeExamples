@@ -103,6 +103,17 @@
             <artifactId>qtjambi-uic-native-windows-x64</artifactId>
             <version>6.6.0</version>
         </dependency>
+<!--因为高版本jdk并不自带下面这个包了，用idea生成javadoc会报这个包不在的错，所以导一下-->
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>javax.annotation</artifactId>
+            <version>RELEASE130</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
 
 
     </dependencies>

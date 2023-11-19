@@ -4,7 +4,18 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import java.awt.GridLayout;
 
+/**
+ * 网格布局示例
+ *
+ * @author admin
+ * @date 2023/11/19
+ */
 public class GridLayoutExample {
+    /**
+     * 主要
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         frame.setLayout(new GridLayout(2, 2)); // 设置GridLayout，行数为1，列数为0

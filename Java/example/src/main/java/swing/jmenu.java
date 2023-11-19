@@ -2,11 +2,25 @@ package swing;
 
 import javax.swing.*;
 
+/**
+ * jmenu
+ *
+ * @author admin
+ * @date 2023/11/19
+ */
 public class jmenu {
+    /**
+     * 主要
+     *
+     * @param args 参数
+     */
     public static void main(String[] args) {
         new jmenu().go();
     }
 
+    /**
+     * 去
+     */
     private void go() {
         JFrame frame = new JFrame("jmenu");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

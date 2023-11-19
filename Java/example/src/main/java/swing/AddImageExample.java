@@ -3,10 +3,10 @@ package swing;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-/**
+/**swing添加图片示例
 *@author Iammm
 *@date 2023/10/21 18:53
- * @description swing添加图片示例
+ *
 */
 public class AddImageExample {
     public static void main(String[] args) {

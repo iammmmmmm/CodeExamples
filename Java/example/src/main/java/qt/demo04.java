@@ -6,10 +6,10 @@ import io.qt.core.Qt;
 import io.qt.gui.QPixmap;
 import io.qt.widgets.*;
 
-/**
+/**异形窗口以及窗口样式，鼠标穿透，还有全局快捷键
  * @author Iammm
  * @date 2023/10/28 14:09
- * @description 异形窗口以及窗口样式，鼠标穿透，还有全局快捷键
+ *
  */
 public class demo04 {
     public static void main(String[] args) {

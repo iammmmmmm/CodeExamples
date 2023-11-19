@@ -5,7 +5,18 @@ package swing;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * 摆动部件测试
+ *
+ * @author iam
+ * @date 2023/11/19
+ */
 public class SwingComponentTest {
+    /**
+     * 主要
+     *
+     * @param args 参数
+     */
     public static void main(String[] args) {
         // 创建窗口
         JFrame frame = new JFrame("Swing Component Test");

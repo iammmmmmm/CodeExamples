@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
 
 import static java.lang.Thread.sleep;
 
-/**
+/**完整ui（非对话框）世界你好！and 一些例子
  * @author Iammm
  * @date 2023/10/26 17:10
- * @description 完整ui（非对话框）世界你好！and 一些例子
+ *
  */
 public class dem02 {
     /**

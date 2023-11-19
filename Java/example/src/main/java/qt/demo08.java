@@ -7,10 +7,10 @@ import io.qt.widgets.QSystemTrayIcon;
 import io.qt.widgets.QWidget;
 import org.slf4j.Logger;
 
-/**
+/**实现系统托盘
  * @author Iammm
  * @date 2023/11/16 16:40
- * @description 实现系统托盘
+ *
  */
 public class demo08 {
 

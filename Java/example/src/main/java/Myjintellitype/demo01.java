@@ -2,8 +2,8 @@ package Myjintellitype;
 
 /**
  *
- * 网上copy的
- * @description 全局快捷键监听
+ * 网上copy的,
+ *   全局快捷键监听
  */
 import com.melloware.jintellitype.HotkeyListener;
 import com.melloware.jintellitype.JIntellitype;

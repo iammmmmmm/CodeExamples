@@ -4,8 +4,17 @@ import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+/**
+ * 键盘侦听器测试
+ *
+ * @author iam
+ * @date 2023/11/19
+ */
 public class KeyboardListenerTest extends JFrame implements KeyListener {
 
+    /**
+     * 键盘侦听器测试
+     */
     public KeyboardListenerTest() {
         setTitle("Keyboard Listener Test");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,10 +29,20 @@ public class KeyboardListenerTest extends JFrame implements KeyListener {
         setVisible(true);
     }
 
+    /**
+     * 主要
+     *
+     * @param args 参数
+     */
     public static void main(String[] args) {
         new KeyboardListenerTest();
     }
 
+    /**
+     * 键类型
+     *
+     * @param e e
+     */
     @Override
     public void keyTyped(KeyEvent e) {
         // 监听键盘的按键输入事件
@@ -34,6 +53,9 @@ public class KeyboardListenerTest extends JFrame implements KeyListener {
         System.out.println("Key Typed: " + c);
     }
 
+    /**
+     * @param e e
+     */
     @Override
     public void keyPressed(KeyEvent e) {
         // 监听键盘的按键按下事件
@@ -43,6 +65,11 @@ public class KeyboardListenerTest extends JFrame implements KeyListener {
         System.out.println("Key Pressed: " + keyCode);
     }
 
+    /**
+     * 密钥已发布
+     *
+     * @param e e
+     */
     @Override
     public void keyReleased(KeyEvent e) {
         // 监听键盘的按键释放事件

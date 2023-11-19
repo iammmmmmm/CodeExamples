@@ -10,18 +10,24 @@ import io.qt.widgets.QApplication;
 import io.qt.widgets.QLabel;
 import io.qt.widgets.QWidget;
 
-/*
+/*媒体相关，显示图片，播放音视频
   @author Iammm
  * @date 2023/11/1 16:02
- * @description 媒体相关，显示图片，播放音视频
+ *
  */
 
 /**
  * 这是一个使用Java语言编写的Qt应用程序，用于显示图片、播放音频和视频。在这个例子中，我们创建了两个QLabel对象，一个用于显示图片
  * ，一个用于显示音频播放进度。我们还创建了一个QMediaPlayer对象和一个QAudioOutput对象，用于播放音频文件。
  * 请注意，这个例子中使用了Java的Qt绑定库，因此需要使用Java编译器进行编译。同时，这个例子中使用了Java的类路径，因此需要在运行时指定正确的类路径。
+ *
+ * @author 36077
+ * @date 2023/11/19
  */
 public class demo05 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         QApplication.initialize(args);
         new media().run();
@@ -33,6 +39,9 @@ public class demo05 {
 
 class media extends QWidget {
 
+    /**
+     *
+     */
     public media() {
         //设置窗口标题
         setWindowTitle("媒体");

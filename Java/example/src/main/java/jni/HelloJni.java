@@ -1,9 +1,9 @@
 package jni;
 
-/**
+/** Hello World
  * @author Iammm
  * @date 2023/10/24 13:47
- * @description Hello World
+ *
  */
 
 /**
