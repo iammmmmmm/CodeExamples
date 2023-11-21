@@ -1,8 +1,8 @@
 /********************************************************************************
  * Form generated from reading UI file 'demo07.ui'
- * <p>
+ *
  * Created by: QtJambi User Interface Compiler version 6.6.0
- * <p>
+ *
  * WARNING! All changes made in this file will be lost when recompiling UI file!
  *******************************************************************************/
 
@@ -31,8 +31,8 @@ public class Ui_demo07 {
     public QScrollBar horizontalScrollBar;
     public QScrollBar verticalScrollBar;
 
-    public void setupUi(QWidget demo07) {
-
+    public void setupUi(QWidget demo07){
+    
         if (demo07.objectName().isEmpty())
             demo07.setObjectName("demo07");
         demo07.setWindowModality(Qt.WindowModality.NonModal);
@@ -98,7 +98,8 @@ public class Ui_demo07 {
         QMetaObject.connectSlotsByName(demo07);
     }
 
-    public void retranslateUi(QWidget demo07) {
+    public void retranslateUi(QWidget demo07)
+    {
         demo07.setWindowTitle(io.qt.core.QCoreApplication.translate("demo07", "Form", null));
         this.pushButton.setText(io.qt.core.QCoreApplication.translate("demo07", "PushButton", null));
     }

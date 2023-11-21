@@ -6,11 +6,11 @@ import io.qt.gui.QPixmap;
 import io.qt.multimedia.QAudioOutput;
 import io.qt.multimedia.QMediaPlayer;
 import io.qt.multimedia.widgets.QVideoWidget;
-import io.qt.widgets.QApplication;
-import io.qt.widgets.QLabel;
-import io.qt.widgets.QWidget;
+import io.qt.widgets.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-/*媒体相关，显示图片，播放音视频
+/*媒体相关，显示图片
   @author Iammm
  * @date 2023/11/1 16:02
  *
@@ -40,7 +40,7 @@ public class demo05 {
 }
 
 class media extends QWidget {
-
+private Logger logger= LoggerFactory.getLogger(media.class);
     /**
      *
      */
@@ -51,14 +51,14 @@ class media extends QWidget {
         setFixedSize(1500, 1000);
         // 设置窗口sticky属性，保持窗口始终置顶
         setWindowFlags(Qt.WindowType.WindowStaysOnTopHint);
-        // 设置窗口背景透明，用于鼠标悬停显示窗口内容
+        // 设置窗口背景透明，用于鼠标穿透
         setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents, true);
         // 设置窗口无边框
         setWindowFlag(Qt.WindowType.FramelessWindowHint);
         // 设置窗口透明度
-        setWindowOpacity(1f);
+        setWindowOpacity(0.25f);
 //        //设置窗口全屏显示
-//        setWindowState(Qt.WindowState.WindowFullScreen);
+       setWindowState(Qt.WindowState.WindowFullScreen);
     }
 
     void run() {
@@ -89,33 +89,6 @@ class media extends QWidget {
         // 使用setScaledContents让图像适应label
         qLabel1.setScaledContents(true);
 
-        // 创建一个QMediaPlayer对象，用于播放音频文件
-        QMediaPlayer qm = new QMediaPlayer(parent);
-
-        // 创建一个QAudioOutput对象，用于播放音频文件
-        QAudioOutput qAudio = new QAudioOutput();
-
-        // 设置QMediaPlayer的音频输出为QAudioOutput
-        qm.setAudioOutput(qAudio);
-
-        // 设置QMediaPlayer的源为音频文件URL
-        qm.setSource(new QUrl("src/main/resources/飘向北方-那吾克热-NW&尤长靖-.mp3"));
-
-        // 播放音频文件
-//        qm.play();
-// TODO 为视频和音频播放添加进度条
-
-        QLabel musicLabel = new QLabel(parent);
-        musicLabel.setText(qm.duration() + "ms");
-        musicLabel.setGeometry(1000, 50, 500, 50);
-
-        QMediaPlayer qM1 = new QMediaPlayer(parent);
-        qM1.setSource(new QUrl("src/main/resources/飘向北方mv.mp4"));
-        QVideoWidget qVideoWidget = new QVideoWidget(parent);
-        qM1.setVideoOutput(qVideoWidget);
-        qM1.setAudioOutput(qAudio);
-        qVideoWidget.setGeometry(0, 500, 250, 250);
-        qM1.play();
         // 显示窗口
         show();
 

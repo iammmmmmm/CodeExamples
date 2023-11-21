@@ -1,6 +1,5 @@
 package qt;
 
-import io.qt.core.QObject;
 import io.qt.widgets.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -120,7 +119,7 @@ class aQTextEdit extends QTextEdit {
     /**
      * 文本已更改
      */
-    public final Signal1<String> textChanged = new Signal1<String>();
+    public final Signal1<String> textChanged = new Signal1<>();
 
     /**
      * QText 编辑

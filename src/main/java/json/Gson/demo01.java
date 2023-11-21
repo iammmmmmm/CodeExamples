@@ -20,7 +20,7 @@ public class demo01 {
         int[] i = {1, 2, 3};
         String s = gson.toJson(i);
         logger.info("i{}", s);
-        Map<String, String> stringMap = new HashMap<String, String>();
+        Map<String, String> stringMap = new HashMap<>();
         for (int i1 = 0; i1 < 10; i1++) {
             stringMap.put("key" + i1, "value" + i1);
         }

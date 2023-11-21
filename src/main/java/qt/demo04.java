@@ -31,8 +31,9 @@ class windowFlag extends QWidget {
     }
 
     void Alien() {
-// TODO 实现异形窗口
-// 我有空会写的，有空一定(/▽＼)
+/**
+ * 异形窗口请转到demo11{@link qt.demo11}
+ */
     }
 
     static final int WA_TransparentForMouseEvents_OFF_ON = 0;
