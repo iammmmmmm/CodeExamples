@@ -6,10 +6,12 @@ import java.io.*;
 import java.util.Base64;
 
 /**
+ * 演示01
  * 读取图片并将其转换成base64
  *
  * @author Iammm
  * @Time 2023/12/1 11:32
+ * @date 2023/12/01
  */
 public class demo01  {
     //以下方法是错误的，转出来的base64不正确
@@ -30,12 +32,23 @@ public class demo01  {
     //
     // }
 
-        public static void main(String[] args) {
+    /**
+     * 对方法进行测试
+     *
+     * @param args 参数
+     */
+    public static void main(String[] args) {
             String base64String = imageToBase64("src/main/resources/wallhaven-6dykgx.png");
             System.out.println(base64String);
         }
 
-        public static String imageToBase64(String imagePath) {
+    /**
+     * 图像转 base64
+     *
+     * @param imagePath 图像路径
+     * @return {@link String}
+     */
+    public static String imageToBase64(String imagePath) {
 String base = null;
             File file = new File(imagePath);
             try (FileInputStream imageInFile = new FileInputStream(file)) {
