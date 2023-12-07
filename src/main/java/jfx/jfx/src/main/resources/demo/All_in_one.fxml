@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.demo01Controller">
+    <Button fx:id="button1" ellipsisString="1023" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#button1Clicked" prefHeight="51.0" prefWidth="55.0" text="Button" textOverrun="LEADING_ELLIPSIS">
+        <tooltip>
+            <Tooltip text="I am a Button" />
+        </tooltip></Button>
+</AnchorPane>
