@@ -6,9 +6,9 @@
 
 <Scene xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.demo01Controller">
     <AnchorPane fx:id="anchorpane1" prefHeight="103.0" prefWidth="102.0">
-      <children>
-         <Button fx:id="button1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onKeyPressed="#button1Clicked" onMouseClicked="#button1Clicked" text="Button" />
-         <Label fx:id="label1" layoutX="26.0" layoutY="48.0" onInputMethodTextChanged="#textChanged" text="Label" />
-      </children></AnchorPane>
+        <Button fx:id="button1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onKeyPressed="#button1Clicked"
+                onMouseClicked="#button1Clicked" text="Button"/>
+        <Label fx:id="label1" layoutX="26.0" layoutY="48.0" onInputMethodTextChanged="#textChanged" text="Label"/>
+    </AnchorPane>
 
 </Scene>
