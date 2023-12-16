@@ -43,7 +43,7 @@ public class demo01 {
 /*
 json格式：{"images":["图片的base64编码"]}
  */
-        String jsonString = "{\"images\":[\"" + base64.demo01.imageToBase64("src/main/resources/wallhaven-6dykgx.png") + "\"]}";
+        String jsonString = "{\"images\":[\"" + base64.demo01.imageToBase64("src/main/resources/jpimage.jpg") + "\"]}";
         StringEntity requestEntity = new StringEntity(jsonString, ContentType.APPLICATION_JSON);
         logger.debug(jsonString);
         HttpPost httpPost = new HttpPost(url);
