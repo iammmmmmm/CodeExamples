@@ -10,9 +10,13 @@ module codeexamples.jfx {
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
     requires annotations;
+    requires com.sun.jna.platform;
+    requires com.sun.jna;
+    requires javafx.swing;
 
     opens codeexamples.jfx to javafx.fxml;
     exports codeexamples.jfx;
+    exports demo.JnaGUNJavaFx to javafx.graphics;
 
     opens demo to javafx.fxml;
     exports demo;

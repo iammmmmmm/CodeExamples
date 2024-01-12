@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.PerspectiveCamera?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Cylinder?>
+<?import javafx.scene.shape.Sphere?>
+
+<AnchorPane onKeyPressed="#CameraKeyPressed" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.H2oController">
+   <children>
+      <Cylinder fx:id="key1" height="100" layoutX="174.0" layoutY="172.0" radius="20" />
+      <Cylinder fx:id="key2" height="100" layoutX="309.0" layoutY="172.0" radius="20" />
+      <Sphere fx:id="hBall" layoutX="244.0" layoutY="250.0" radius="50" />
+      <Sphere fx:id="oball1" layoutX="174.0" layoutY="91.0" radius="50" />
+      <Sphere fx:id="oball2" layoutX="309.0" layoutY="91.0" radius="50" />
+      <PerspectiveCamera fx:id="Camera" />
+   </children>
+</AnchorPane>

@@ -36,7 +36,7 @@ public class FilesAndFilessones {
     }
 
     public List<File> getList(String basePath) {
-        if (basePath == null || basePath.isEmpty()) {
+        if (isNullOrEmpty(basePath)) {
             logger.info("basePath为空,使用默认路径{}", this.basePath);
         } else {
             this.basePath = basePath;
@@ -54,7 +54,7 @@ public class FilesAndFilessones {
     }
 
     public List<File> getListByType(String basePath, String type) {
-        if (basePath == null || basePath.isEmpty()) {
+        if (isNullOrEmpty(basePath)) {
             logger.info("basePath为空,使用默认路径{}", this.basePath);
         } else {
             this.basePath = basePath;
