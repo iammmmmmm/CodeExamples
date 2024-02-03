@@ -14,8 +14,8 @@ import javafx.stage.Stage;
  */
 public class demo extends Application {
     public static void main(String[] args) {
-        // launch(args);
-        new demo().a();
+    launch(args);
+
     }
 
     @Override
@@ -42,9 +42,5 @@ public class demo extends Application {
     }
 
 
-    void a(){
 
-       var b= Integer.parseInt("1.0e+666");
-        System.out.println(b);
-    }
 }

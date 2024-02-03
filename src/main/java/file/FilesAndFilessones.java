@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,15 +33,15 @@ public class FilesAndFilessones {
 
 
     private boolean isNullOrEmpty(String basePath) {
-        return basePath == null || basePath.isEmpty();
+        if (basePath == null || basePath.isEmpty()) {
+            logger.info("basePath为空,使用默认路径{}", this.basePath);
+            new IOException("输入路径为空");
+        }
+        return true;
     }
 
     public List<File> getList(String basePath) {
-        if (isNullOrEmpty(basePath)) {
-            logger.info("basePath为空,使用默认路径{}", this.basePath);
-        } else {
-            this.basePath = basePath;
-        }
+        isNullOrEmpty(basePath);
         File dir = new File(this.basePath);
         if (!dir.exists()) {
             logger.error("{}不存在", basePath);
@@ -54,11 +55,7 @@ public class FilesAndFilessones {
     }
 
     public List<File> getListByType(String basePath, String type) {
-        if (isNullOrEmpty(basePath)) {
-            logger.info("basePath为空,使用默认路径{}", this.basePath);
-        } else {
-            this.basePath = basePath;
-        }
+        isNullOrEmpty(basePath);
         File dir = new File(this.basePath);
         if (!dir.exists()) {
             logger.error("{}不存在", basePath);

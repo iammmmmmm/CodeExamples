@@ -17,7 +17,7 @@ module codeexamples.jfx {
     opens codeexamples.jfx to javafx.fxml;
     exports codeexamples.jfx;
     exports demo.JnaGUNJavaFx to javafx.graphics;
-
+    exports demo.rxControl to javafx.graphics;
     opens demo to javafx.fxml;
     exports demo;
 

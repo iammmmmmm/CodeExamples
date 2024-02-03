@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXFillButton?>
+<?import com.leewyatt.rxcontrols.controls.RXLineButton?>
+<?import com.leewyatt.rxcontrols.controls.RXTranslationButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.DemoButtonController">
+   <children>
+      <RXLineButton layoutX="202.0" layoutY="7.0" />
+      <RXTranslationButton layoutX="14.0" layoutY="119.0" />
+      <RXFillButton layoutX="14.0" layoutY="14.0" text="RXFillButton" />
+   </children>
+</AnchorPane>
