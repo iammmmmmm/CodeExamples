@@ -16,7 +16,7 @@ public interface JnaLibrary extends Library {
 
 }
 
-class test {
+class test1 {
     public static void main(String[] args) {
         System.out.println(JnaLibrary.INSTANCE.aab());
     }
